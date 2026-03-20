@@ -3,6 +3,7 @@ import Hero from '../components/hero'
 import OurServices from '../components/ourServices'
 import ValueProp from '../components/valueProp'
 import Cta from '../components/cta'
+import Footer from '../components/footer'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <OurServices/>
       <ValueProp/>
       <Cta/>
+      <Footer/>
     </div>
   )
 }

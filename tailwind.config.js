@@ -11,6 +11,8 @@ module.exports = {
         "border":"#F5F5F5",
         "text-color-black":"#414651",
         "gold-main":"#E9C46A",
+        "bg-black-main":"#0F0E0C",
+        "text-tertiary":"#94979C",
       },
     },
   },
