@@ -15,6 +15,7 @@ module.exports = {
         "text-tertiary":"#94979C",
         "pink":"#FEE4E2",
         "green":"#095C37",
+        "light-yellow":"#F5F0D7",
       },
     },
   },
