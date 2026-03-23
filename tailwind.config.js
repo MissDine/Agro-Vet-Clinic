@@ -14,6 +14,7 @@ module.exports = {
         "bg-black-main":"#0F0E0C",
         "text-tertiary":"#94979C",
         "pink":"#FEE4E2",
+        "green":"#095C37",
       },
     },
   },
