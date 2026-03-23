@@ -40,7 +40,7 @@ function ourServices() {
                 <p className="mb-6 text-gray-600 dark:text-gray-300"> In-house lab testing, X-rays, and ultrasound imaging for accurate diagnosis.</p>
                 
             </div>
-            <div className={`group transition-all duration-1000 ease-out delay-600 p-8 rounded-2xl bg-bg-main border-b-2 border-border`}>
+            <div className={`group transition-all duration-1000 ease-out delay-600 p-8 rounded-2xl bg-white border-b-2 border-border`}>
                 <div className="items-center justify-center group-hover:bg-purple-600 transition-colors duration-300 flex w-[64px] h-[64px] mb-6 rounded-full bg-purple-100 dark:bg-purple-900">
                     <div>
                         <svg className="w-8 h-8 text-text-black dark:text-purple-400 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"></path></svg>

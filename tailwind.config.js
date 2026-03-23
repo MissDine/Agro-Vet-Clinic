@@ -13,6 +13,7 @@ module.exports = {
         "gold-main":"#E9C46A",
         "bg-black-main":"#0F0E0C",
         "text-tertiary":"#94979C",
+        "pink":"#FEE4E2",
       },
     },
   },

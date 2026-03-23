@@ -1,4 +1,5 @@
 import React from 'react'
+import HeroImage from "../homeAssets/homecow-image.jpg"
 
 function Hero() {
   return (
@@ -42,10 +43,10 @@ function Hero() {
       {/* Right content - Illustration */}
       <div className="relative animate__animated animate__fadeIn">
         <div className="relative max-w-md mx-auto">
-          <div className="absolute -top-10 -left-10 w-32 h-32 bg-primary/10 rounded-2xl -z-10 animate-float"></div>
+          <div className="absolute -top-10 -left-10 w-32 h-32  rounded-xl -z-10 animate-float"></div>
           <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-secondary/10 rounded-2xl -z-10 animate-float-reverse">
           </div>
-          <img className="relative rounded-xl shadow-2xl border-8 border-white" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Digital Marketing"/>
+          <img className="relative rounded-xl " src={HeroImage}alt="Digital Marketing"/>
         </div>
         <div className="absolute -bottom-8 left-3/4 bg-green-500 px-6 py-3 rounded-lg shadow-sm flex items-center gap-3 hover:bg-green-600 transition-all duration-300 cursor-pointer text-sm" >
           <a href="https://wa.me/254712345678" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white ">

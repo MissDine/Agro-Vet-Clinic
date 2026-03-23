@@ -1,16 +1,14 @@
 import React, { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 function Navbar() {
-  const [activePage, setActivePage] = useState('AboutUs')
+  const location = useLocation()
+  const currentPath = location.pathname
 
-  const handleNavClick = (page) => {
-    setActivePage(page)
-  }
-
-  const getLinkClass = (page) => {
+  const getLinkClass = (path) => {
     const baseClass = "md:p-4 py-3 px-0 block"
-    return activePage === page 
-      ? `${baseClass} font-bold underline` 
+    return currentPath === path
+      ? `${baseClass} font-bold underline`
       : baseClass
   }
 
@@ -33,9 +31,9 @@ function Navbar() {
     <div className="hidden md:flex md:items-center md:w-auto w-full" id="menu">
         <nav>
             <ul className="md:flex items-center justify-between text-base text-text-color-black font-semibold pt-4 md:pt-0">
-                <li><a className={getLinkClass('Home')} href="#" onClick={() => handleNavClick('Home')}>Home</a></li>
-                <li><a className={getLinkClass('Services')} href="#services" onClick={() => handleNavClick('Services')}>Services</a></li>
-                <li><a className={getLinkClass('Contact Us')} href="#contactus" onClick={() => handleNavClick('Contact Us')}>Contact Us</a></li>
+                <li><Link className={getLinkClass('/')} to="/">Home</Link></li>
+                <li><Link className={getLinkClass('/services')} to="/services">Services</Link></li>
+                <li><Link className={getLinkClass('/contact')} to="/contact">Contact Us</Link></li>
             </ul>
         </nav>
     </div>
