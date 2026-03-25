@@ -2,7 +2,7 @@ import React from 'react'
 
 function servicesHero() {
   return (
-    <div className='bg-bg-main'>
+    <div className='bg-light-yellow'>
         <div class=" flex items-center">
 
     <div class="px-4 mx-auto mb-16 max-w-7xl sm:mt-24">
