@@ -3,6 +3,7 @@ import ContactUsLocation from "../components/contactUsLocation"
 import ContactUsForm from "../components/contactUsForm"
 import Footer from "../components/footer"
 import Navbar from "../components/navbar"
+import ContactUsCta from "../components/contactUsCta"
 function ContactUs() {
   return (
     <div>
@@ -10,6 +11,7 @@ function ContactUs() {
       <ContactUsHero />
       <ContactUsForm/>
       <ContactUsLocation />
+      <ContactUsCta/>
       <Footer/>
     </div>
   )
