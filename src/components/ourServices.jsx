@@ -1,11 +1,13 @@
-import React from 'react'
-
+import heartIcon from "../homeAssets/heart-Icon.png"
+import diagnosticIcon from "../homeAssets/DiagnosticIcon.png"
+import surgeryIcon from "../homeAssets/surgeryIcon.png"
+import arrowIcon from "../homeAssets/arrowIcon.png"
 function ourServices() {
   return (
    
      
-      <div className="bg-bg-main min-h-0 flex items-center justify-center mx-auto max-w-6xl ">
-<section className="py-20  ">
+      <div className=" w-full bg-bg-main py-16">
+<div className="mx-auto max-w-6xl  ">
     <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
             <div className="transition-all duration-1000 ease-out">
@@ -16,10 +18,11 @@ function ourServices() {
             </div>
         </div>
         <div className="grid gap-8 mb-20 md:grid-cols-2 lg:grid-cols-3">
-            <div className={`group transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-main `}>
-                <div className="items-center justify-center group-hover:bg-blue-600 transition-colors duration-300 flex w-[64px] h-[64px] mb-6 rounded-full bg-blue-100 dark:bg-blue-900">
+            <div className={`group transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-main border border-border-gray`}>
+                <div className="items-center justify-center  duration-300 flex w-[54px] h-[54px] mb-6 rounded-md bg-white ">
                     <div>
-                        <svg className="w-8 h-8 text-blue-600 dark:text-blue-400 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        <img className="w-8 h-8 text-gold-main =" fill="none" stroke="currentColor" viewBox="0 0 24 24" src={heartIcon} alt="Heart Icon" />
+                      
                     </div>
                 </div>
                 <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
@@ -28,36 +31,45 @@ function ourServices() {
                 <p className="mb-6 text-gray-600 dark:text-gray-300">Routine health checks, vaccinations, and de-worming to keep your animals healthy</p>
                
             </div>
-            <div className={`group transition-all duration-1000 ease-out delay-400 p-8 rounded-2xl bg-main `}>
-                <div className="items-center justify-center group-hover:bg-green-600 transition-colors duration-300 flex w-[64px] h-[64px] mb-6 rounded-full bg-green-100 dark:bg-green-900">
+            <div className={`group transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-main border border-border-gray`}>
+                <div className="items-center justify-center  duration-300 flex w-[54px] h-[54px] mb-6 rounded-md bg-white ">
                     <div>
-                        <svg className="w-8 h-8 text-green-600 dark:text-green-400 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        <img className="w-8 h-8 text-gold-main =" fill="none" stroke="currentColor" viewBox="0 0 24 24" src={diagnosticIcon} alt="Heart Icon" />
+                      
                     </div>
                 </div>
                 <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
                     Diagnostics
                 </h3>
-                <p className="mb-6 text-gray-600 dark:text-gray-300"> In-house lab testing, X-rays, and ultrasound imaging for accurate diagnosis.</p>
-                
+                <p className="mb-6 text-gray-600 dark:text-gray-300">In-house lab testing, X-rays, and ultrasound imaging for accurate diagnosis.</p>
+               
             </div>
-            <div className={`group transition-all duration-1000 ease-out delay-600 p-8 rounded-2xl bg-main border-b-2 border-border`}>
-                <div className="items-center justify-center group-hover:bg-purple-600 transition-colors duration-300 flex w-[64px] h-[64px] mb-6 rounded-full bg-purple-100 dark:bg-purple-900">
+            <div className={`group transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-main border border-border-gray`}>
+                <div className="items-center justify-center  duration-300 flex w-[54px] h-[54px] mb-6 rounded-md bg-white ">
                     <div>
-                        <svg className="w-8 h-8 text-text-black dark:text-purple-400 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"></path></svg>
+                        <img className="w-8 h-8 text-gold-main =" fill="none" stroke="currentColor" viewBox="0 0 24 24" src={surgeryIcon} alt="Heart Icon" />
+                      
                     </div>
                 </div>
-                <h3 className="mb-4 text-2xl font-bold text-text-black dark:text-white">
+                <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
                     Surgery
                 </h3>
-                <p className="mb-6 text-tet-black dark:text-gray-300">Soft tissue and orthopedic surgery, dental cleaning, and emergency care.</p>
-                
+                <p className="mb-6 text-gray-600 dark:text-gray-300">Soft tissue and orthopedic surgery, dental cleaning, and emergency care.</p>
+               
             </div>
         </div>
-        <div className="flex justify-center mt-8">
-          <button className='bg-main hover:bg-gold-main text-text-black font-semibold rounded-lg px-8 py-3 transition-colors duration-300'><a href="#services">View All Services</a></button>
-        </div>
+        <div className="flex justify-center items-center gap-2 mt-8">
+  <button
+  onClick={() => window.location.href = "/services"}
+  className="bg-white hover:bg-gold-main text-text-black font-medium rounded-lg px-8 py-3 transition-colors duration-300 flex items-center gap-2"
+>
+  View All Services
+  <img src={arrowIcon} alt="arrow" className="w-4 h-4" />
+</button>
+</div>
+
     </div>
-</section>
+</div>
 </div>
    
     
