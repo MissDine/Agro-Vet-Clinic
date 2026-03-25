@@ -2,12 +2,12 @@ import React from 'react'
 
 function servicescta() {
   return (
-    <div>
+    <div className=''>
       <section className="relative overflow-hidden font-poppins bg-bg-main text-text-black mb-0">
   
 
   {/* Main content */}
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 bg-white rounded-2xl">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       {/* Left content */}
       <div className="text-center md:text-left">
@@ -35,26 +35,43 @@ Animal emergencies don't follow a schedule. That's why our emergency veterinary 
 
       {/* Right content - Illustration */}
       <div className="relative animate__animated animate__fadeIn">
-        <div className="relative max-w-md mx-auto bg-pink">
-          <div className="absolute -top-10 -left-10 w-32 h-32  rounded-xl -z-10 animate-float"></div>
-          <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-secondary/10 rounded-2xl -z-10 animate-float-reverse ">
-          </div>
-          <h1 className='text-xl font-bold'>When to call emergency services</h1>
-          <div>
-            
-            <ul>
-                <li>Severe animal injury or trauma</li>
-                <li>Difficulty breathing</li>
-                <li>Sudden collapse or unconsciousness</li>
-                <li>Prolonged seizures</li>
-                <li>Severe bleeding</li>
-                <li>Birthing complications (dystocia)</li>
-            </ul>
-          </div>
-        </div>
-        
-        
-      </div>
+  <div className="relative max-w-md mx-auto bg-pink px-6 sm:px-8 lg:px-10 py-20 md:py-20 rounded-xl">
+    {/* Decorative floating shapes */}
+    <div className="absolute -top-10 -left-10 w-32 h-32 rounded-xl -z-10 animate-float"></div>
+    <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-secondary/10 rounded-2xl -z-10 animate-float-reverse"></div>
+
+    {/* Heading */}
+    <h1 className="text-2xl font-bold mb-6">When to call emergency services</h1>
+
+    {/* List */}
+    <ul className="space-y-4">
+      {[
+        "Severe animal injury or trauma",
+        "Difficulty breathing",
+        "Sudden collapse or unconsciousness",
+        "Prolonged seizures",
+        "Severe bleeding",
+        "Birthing complications (dystocia)"
+      ].map((item, idx) => (
+        <li key={idx} className="flex items-start gap-3">
+          {/* Icon at the start */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-5 h-5 text-red-600 mt-1 flex-shrink-0"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          <span className="text-text-black">{item}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
+
     </div>
   </div>
 </section>

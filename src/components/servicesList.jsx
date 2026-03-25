@@ -1,149 +1,836 @@
 import React from 'react'
-
+import heartIcon from "./servicesAssets/Icon.png"
+import diagnosticsIcon from "./servicesAssets/Icon (1).png"
+import surgeryIcon from "./servicesAssets/Icon (2).png"
+import image1 from "./servicesAssets/Screen mockup (REPLACE FILL).png"
+import image2 from "./servicesAssets/Mockup wrap.png"
+import image3 from "./servicesAssets/Screen mockup 3_2 (3).png"
+import image4 from "./servicesAssets/Mockup wrap (1).png"
+import image5 from "./servicesAssets/Mockup wrap (2).png"
+import image6 from "./servicesAssets/image6.png"
+import image7 from "./servicesAssets/Mockup wrap (4).png"
 function servicesList() {
   return (
     <div>
       <section className="w-full mx-auto py-10 bg-bg-main dark:bg-gray-900 dark:text-white">
 
-  <div className="w-full h-full flex flex-col items-center md:py-4 py-10">
-    {/* Col - 2 */}
-    <div
-      className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-4 gap-2 justify-center lg:items-stretch md:items-center mt-4">
-     
-      <img className="md:w-[50%] w-full md:rounded-t-lg rounded-sm" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxob21lfGVufDB8MHx8fDE3MTA0OTAwNjl8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="billboard image" />
+ 
+  <div className="w-full flex flex-col items-center md:py-4 py-10">
+  <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-6 gap-4 justify-center items-stretch mt-4">
 
-      <div className="md:w-[50%] w-full bg-gray-100 dark:bg-gray-900 dark:text-gray-400 md:p-4 p-0 rounded-md">
-        <h2 className="text-3xl font-semibold text-gray-900 dark:text-white">Lorem ipsum dolor sit amet consectetur</h2>
-        <p className="text-md mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore placeat assumenda nam
-          veritatis, magni doloremque pariatur quos fugit ipsa id voluptatibus deleniti officiis cum ratione eligendi
-          sed necessitatibus aliquam error laborum delectus quaerat. Delectus hic error eligendi sed repellat natus fuga
-          nobis tempora possimus ullam!</p>
+    {/* Text Column */}
+    <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-gray-50 dark:bg-gray-800">
+      <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white">
+        <img
+          className="w-8 h-8 text-text-black"
+          fill="#0F0E0C"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          src={heartIcon}
+          alt=""
+        />
       </div>
-
+      <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+        Preventive & Wellness
+      </h3>
+      <p className="mb-6 text-text-black">
+        Keep your animals healthy with regular preventive care
+      </p>
+      <ul className="space-y-2 text-sm text-text-black">
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Routine health examinations
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Vaccination programs
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Deworming and parasite control
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Nutrition counseling
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Health monitoring and record keeping
+        </li>
+      </ul>
     </div>
-    {/* col 3 */}
-    <div
-      className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col flex-col-reverse lg:gap-4 gap-2 justify-center lg:items-stretch md:items-center mt-6">
-    
-      <div className="md:w-[50%] w-full bg-gray-100 dark:bg-gray-900 dark:text-gray-400 md:p-4 p-0 rounded-md">
-        <h2 className="text-3xl font-semibold text-gray-900 dark:text-white">Lorem ipsum dolor sit amet consectetur</h2>
 
-        <p className="text-md mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore placeat assumenda nam
-          veritatis, magni doloremque pariatur quos fugit ipsa id voluptatibus deleniti officiis cum ratione eligendi
-          sed necessitatibus aliquam error laborum delectus quaerat. Delectus hic error eligendi sed repellat natus fuga
-          nobis tempora possimus ullam!</p>
+    {/* Image Column */}
+    <div className="md:w-1/2 w-full">
+      <img
+        className="w-full h-full object-cover md:rounded-lg rounded-sm"
+        src={image1}
+        alt="billboard image"
+      />
+    </div>
+
+  </div>
+</div>
+  <div className="w-full flex flex-col items-center md:py-4 py-10">
+  <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-6 gap-4 justify-center items-stretch mt-4">
+
+    {/* Image Column */}
+    <div className="md:w-1/2 w-full">
+      <img
+        className="w-full h-full object-cover md:rounded-lg rounded-sm"
+        src={image2}
+        alt="billboard image"
+      />
+    </div>
+
+    {/* Text Column */}
+    <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-gray-50 dark:bg-gray-800">
+      <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white">
+        <img
+          className="w-8 h-8 text-text-black"
+          fill="#0F0E0C"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          src={diagnosticsIcon}
+          alt=""
+        />
       </div>
+      <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+        Diagnostics
+      </h3>
+      <p className="mb-6 text-text-black">
+        Advanced diagnostic services for accurate health assessment
+      </p>
+      <ul className="space-y-2 text-sm text-text-black">
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          In-house laboratory testing
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          X-ray imaging
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+         Ultrasound examinations
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Blood work and analysis
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Disease screening and testing
+        </li>
+       
+      </ul>
+    </div>
+
+  </div>
+</div>
+<div className="w-full flex flex-col items-center md:py-4 py-10">
+  <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-6 gap-4 justify-center items-stretch mt-4">
+
+    {/* Text Column */}
+    <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-gray-50 dark:bg-gray-800">
+      <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white">
+        <img
+          className="w-8 h-8 text-text-black"
+          fill="#0F0E0C"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          src={surgeryIcon}
+          alt=""
+        />
+      </div>
+      <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+       Surgery
+      </h3>
+      <p className="mb-6 text-text-black">
+        Professional surgical procedures with expert care
+      </p>
+      <ul className="space-y-2 text-sm text-text-black">
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Soft tissue surgery
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Orthopedic surgery
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Dental cleaning and procedures
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+         Emergency surgical interventions
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Post-operative care and monitoring
+        </li>
+        
+      </ul>
+    </div>
+
+    {/* Image Column */}
+    <div className="md:w-1/2 w-full">
+      <img
+        className="w-full h-full object-cover md:rounded-lg rounded-sm"
+        src={image3}
+        alt="billboard image"
+      />
+    </div>
+
+  </div>
+</div>
+<div className="w-full flex flex-col items-center md:py-4 py-10">
+  <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-6 gap-4 justify-center items-stretch mt-4">
+
+    {/* Image Column */}
+    <div className="md:w-1/2 w-full">
+      <img
+        className="w-full h-full object-cover md:rounded-lg rounded-sm"
+        src={image4}
+        alt="billboard image"
+      />
+    </div>
+
+    {/* Text Column */}
+    <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-gray-50 dark:bg-gray-800">
+      <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white">
+        <img
+          className="w-8 h-8 text-text-black"
+          fill="#0F0E0C"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          src={diagnosticsIcon}
+          alt=""
+        />
+      </div>
+      <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+        Treatment & Disease Management
+      </h3>
+      <p className="mb-6 text-text-black">
+        Comprehensive treatment for various conditions
+      </p>
+      <ul className="space-y-2 text-sm text-text-black">
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+         Diagnosis and treatment of infections
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Managing metabolic conditions (milk fever, ketosis)
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+         Respiratory disease treatment
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Skin conditions and allergies
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Chronic disease management
+        </li>
+       
+      </ul>
+    </div>
+
+  </div>
+</div>
+  <div className="w-full flex flex-col items-center md:py-4 py-10">
+  <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-6 gap-4 justify-center items-stretch mt-4">
+
+    {/* Text Column */}
+    <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-gray-50 dark:bg-gray-800">
+      <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white">
+        <img
+          className="w-8 h-8 text-text-black"
+          fill="#0F0E0C"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          src={surgeryIcon}
+          alt=""
+        />
+      </div>
+      <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+       Pet Care Services
+      </h3>
+      <p className="mb-6 text-text-black">
+        Specialized care for your beloved pets
+      </p>
+      <ul className="space-y-2 text-sm text-text-black">
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Professional grooming services
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+         Pet relocation assistance
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Behavioral consultation
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+         24-hour emergency services
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Pet boarding and daycare
+        </li>
+        
+      </ul>
+    </div>
+
+    {/* Image Column */}
+    <div className="md:w-1/2 w-full">
+      <img
+        className="w-full h-full object-cover md:rounded-lg rounded-sm"
+        src={image5}
+        alt="billboard image"
+      />
+    </div>
+
+  </div>
+</div>
+<div className="w-full flex flex-col items-center md:py-4 py-10">
+  <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-6 gap-4 justify-center items-stretch mt-4">
+
+    {/* Image Column */}
+    <div className="md:w-1/2 w-full">
+      <img
+        className="w-full h-full object-cover md:rounded-lg rounded-sm"
+        src={image6}
+        alt="billboard image"
+      />
+    </div>
+
+    {/* Text Column */}
+    <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-gray-50 dark:bg-gray-800">
+      <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white">
+        <img
+          className="w-8 h-8 text-text-black"
+          fill="#0F0E0C"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          src={diagnosticsIcon}
+          alt=""
+        />
+      </div>
+      <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+        Veterinary Consultation
+      </h3>
+      <p className="mb-6 text-text-black"> Veterinary Consultation </p>
+      <ul className="space-y-2 text-sm text-text-black">
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+         Farm management consultation
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Herd health programs
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+         Nutrition planning
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Disease prevention strategies
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+        Production optimization
+        </li>
+       
+      </ul>
+    </div>
+
+  </div>
+</div>
+<div className="w-full flex flex-col items-center md:py-4 py-10">
+  <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-6 gap-4 justify-center items-stretch mt-4">
+
+    {/* Text Column */}
+    <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-gray-50 dark:bg-gray-800">
+      <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white">
+        <img
+          className="w-8 h-8 text-text-black"
+          fill="#0F0E0C"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          src={surgeryIcon}
+          alt=""
+        />
+      </div>
+      <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+        Obstetrics & Gynecology
+      </h3>
+      <p className="mb-6 text-text-black">
+        Reproductive health services for your animals
+      </p>
+      <ul className="space-y-2 text-sm text-text-black">
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Artificial insemination in cows, dogs, pigs, and goats
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Early pregnancy diagnosis
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+         Calving and birthing assistance
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Calving and birthing assistance
+        </li>
+        <li className="flex items-center">
+          <svg
+            className="w-6 h-6 text-text-black mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          Reproductive disease treatment
+        </li>
+      </ul>
+    </div>
+
+    {/* Image Column */}
+    <div className="md:w-1/2 w-full">
+      <img
+        className="w-full h-full object-cover md:rounded-lg rounded-sm"
+        src={image7}
+        alt="billboard image"
+      />
+    </div>
+
+  </div>
+</div>
   
-      <img className="md:w-[50%] w-full md:rounded-t-lg rounded-sm" src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8aG9tZXxlbnwwfDB8fHwxNzEwNDkwMDcwfDA&ixlib=rb-4.0.3&q=80&w=1080" alt="billboard image" />
-
-    </div>
-  </div>
-  <div className="w-full h-full flex flex-col items-center md:py-4 py-10">
-    {/* Col - 2 */}
-    <div
-      className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-4 gap-2 justify-center lg:items-stretch md:items-center mt-4">
-     
-      <img className="md:w-[50%] w-full md:rounded-t-lg rounded-sm" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxob21lfGVufDB8MHx8fDE3MTA0OTAwNjl8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="billboard image" />
-
-     <div className=' transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-gray-50 dark:bg-gray-800'>
-                <div className="items-center justify-center group-hover:bg-blue-600 transition-colors duration-300 flex w-[64px] h-[64px] mb-6 rounded-full bg-blue-100 dark:bg-blue-900">
-                    <div>
-                        <svg className="w-8 h-8 text-blue-600 dark:text-blue-400 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                    </div>
-                </div>
-                <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
-                    Web Development
-                </h3>
-                <p className="mb-6 text-gray-600 dark:text-gray-300">
-                    Custom websites and web applications built with modern technologies for optimal performance and user experience.
-                </p>
-                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-                    <li className="items-center flex">
-                        <svg className="w-4 h-4 text-blue-600 mr-2 rtl:ml-2 rtl:mr-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span className="text-gray-700 dark:text-gray-300">Responsive Design</span>
-                    </li>
-                    <li className="items-center flex">
-                        <svg className="w-4 h-4 text-blue-600 mr-2 rtl:ml-2 rtl:mr-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span className="text-gray-700 dark:text-gray-300">SEO Optimization</span>
-                    </li>
-                    <li className="items-center flex">
-                        <svg className="w-4 h-4 text-blue-600 mr-2 rtl:ml-2 rtl:mr-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span className="text-gray-700 dark:text-gray-300">Performance Optimization</span>
-                    </li>
-                </ul>
-           
-
-    </div>
-    {/* col 3 */}
-  
-  </div>
-  <div className="w-full h-full flex flex-col items-center md:py-4 py-10">
-    {/* Col - 2 */}
-    <div
-      className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-4 gap-2 justify-center lg:items-stretch md:items-center mt-4">
-     
-      <img className="md:w-[50%] w-full md:rounded-t-lg rounded-sm" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxob21lfGVufDB8MHx8fDE3MTA0OTAwNjl8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="billboard image" />
-
-      <div className="md:w-[50%] w-full bg-gray-100 dark:bg-gray-900 dark:text-gray-400 md:p-4 p-0 rounded-md">
-        <h2 className="text-3xl font-semibold text-gray-900 dark:text-white">Lorem ipsum dolor sit amet consectetur</h2>
-        <p className="text-md mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore placeat assumenda nam
-          veritatis, magni doloremque pariatur quos fugit ipsa id voluptatibus deleniti officiis cum ratione eligendi
-          sed necessitatibus aliquam error laborum delectus quaerat. Delectus hic error eligendi sed repellat natus fuga
-          nobis tempora possimus ullam!</p>
-      </div>
-
-    </div>
-    {/* col 3 */}
-    <div
-      className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col flex-col-reverse lg:gap-4 gap-2 justify-center lg:items-stretch md:items-center mt-6">
-    
-      <div className="md:w-[50%] w-full bg-gray-100 dark:bg-gray-900 dark:text-gray-400 md:p-4 p-0 rounded-md">
-        <h2 className="text-3xl font-semibold text-gray-900 dark:text-white">Lorem ipsum dolor sit amet consectetur</h2>
-
-        <p className="text-md mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore placeat assumenda nam
-          veritatis, magni doloremque pariatur quos fugit ipsa id voluptatibus deleniti officiis cum ratione eligendi
-          sed necessitatibus aliquam error laborum delectus quaerat. Delectus hic error eligendi sed repellat natus fuga
-          nobis tempora possimus ullam!</p>
-      </div>
-  
-      <img className="md:w-[50%] w-full md:rounded-t-lg rounded-sm" src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8aG9tZXxlbnwwfDB8fHwxNzEwNDkwMDcwfDA&ixlib=rb-4.0.3&q=80&w=1080" alt="billboard image" />
-
-    </div>
-  </div>
-  <div className="w-full h-full flex flex-col items-center md:py-4 py-10">
-    {/* Col - 2 */}
-    <div
-      className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-4 gap-2 justify-center lg:items-stretch md:items-center mt-4">
-     
-      <img className="md:w-[50%] w-full md:rounded-t-lg rounded-sm" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxob21lfGVufDB8MHx8fDE3MTA0OTAwNjl8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="billboard image" />
-
-      <div className="md:w-[50%] w-full bg-gray-100 dark:bg-gray-900 dark:text-gray-400 md:p-4 p-0 rounded-md">
-        <h2 className="text-3xl font-semibold text-gray-900 dark:text-white">Lorem ipsum dolor sit amet consectetur</h2>
-        <p className="text-md mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore placeat assumenda nam
-          veritatis, magni doloremque pariatur quos fugit ipsa id voluptatibus deleniti officiis cum ratione eligendi
-          sed necessitatibus aliquam error laborum delectus quaerat. Delectus hic error eligendi sed repellat natus fuga
-          nobis tempora possimus ullam!</p>
-      </div>
-
-    </div>
-    {/* col 3 */}
-    <div
-      className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col flex-col-reverse lg:gap-4 gap-2 justify-center lg:items-stretch md:items-center mt-6">
-    
-      <div className="md:w-[50%] w-full bg-gray-100 dark:bg-gray-900 dark:text-gray-400 md:p-4 p-0 rounded-md">
-        <h2 className="text-3xl font-semibold text-gray-900 dark:text-white">Lorem ipsum dolor sit amet consectetur</h2>
-
-        <p className="text-md mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore placeat assumenda nam
-          veritatis, magni doloremque pariatur quos fugit ipsa id voluptatibus deleniti officiis cum ratione eligendi
-          sed necessitatibus aliquam error laborum delectus quaerat. Delectus hic error eligendi sed repellat natus fuga
-          nobis tempora possimus ullam!</p>
-      </div>
-  
-      <img className="md:w-[50%] w-full md:rounded-t-lg rounded-sm" src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8aG9tZXxlbnwwfDB8fHwxNzEwNDkwMDcwfDA&ixlib=rb-4.0.3&q=80&w=1080" alt="billboard image" />
-
-    </div>
-  </div>
-  </div>
 </section>
 
 </div>
