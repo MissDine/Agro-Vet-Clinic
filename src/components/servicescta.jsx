@@ -19,7 +19,7 @@ function servicescta() {
   
 
   {/* Main content */}
-  <div className="max-w-7xl px-4 py-24 md:py-32 bg-white rounded-2xl">
+  <div className="max-w-7xl mx-auto px-4 py-24 md:py-32 bg-white rounded-2xl">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       {/* Left content */}
       <div className="text-center md:text-left">

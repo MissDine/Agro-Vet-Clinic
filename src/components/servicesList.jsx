@@ -26,7 +26,7 @@ import image7 from "./servicesAssets/Mockup wrap (4).png"
 function servicesList() {
   return (
     <div>
-      <section className="w-full mx-auto py-10 bg-bg-main dark:bg-gray-900 dark:text-white">
+      <section className="w-full mx-auto py-10 bg-bg-main ">
 
  
   <div className="w-full flex flex-col items-center md:py-4 py-10">
