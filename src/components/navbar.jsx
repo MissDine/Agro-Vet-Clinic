@@ -33,7 +33,7 @@ function Navbar() {
   }
 
   return (
-    <div className='bg-bg-black-main border-b-2 border-border'>
+    <div className='bg-bg-black-main border-b-2 border-border sticky top-0 z-50'>
         <header className="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-md">
     <div className="flex-1 flex justify-between items-center">
   <a
