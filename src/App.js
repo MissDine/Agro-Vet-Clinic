@@ -1,9 +1,9 @@
-import "../src/index.css"
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from "../src/pages/Home"
-import Services from "../src/pages/services"
-import ContactUs from "../src/pages/ContactUs"
-
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import "../src/embla.css";
+import "../src/index.css";
+import ContactUs from "../src/pages/ContactUs";
+import Home from "../src/pages/Home";
+import Services from "../src/pages/services";
 
 /**
  * Root application component.
@@ -25,7 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<ContactUs/>} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </div>
     </Router>

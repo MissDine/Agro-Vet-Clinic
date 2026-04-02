@@ -1,121 +1,111 @@
-import React, { useRef } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Autoplay } from 'swiper/modules'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import cattle from "../homeAssets/Image (46).png"
-import goatsSheep from "../homeAssets/Image (47).png"
-import dogs from "../homeAssets/Image (48).png"
-import cats from "../homeAssets/Image (49).png"
-import poultry from "../homeAssets/Image (50).png"
-import horsesDonkeys from "../homeAssets/Image (51).png"
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useRef, useState } from "react";
 
-/**
- * Responsive animal showcase slider.
- *
- * @description
- * Displays a looping carousel of animal images using Swiper with autoplay
- * and manual next/previous controls.
- *
- * @returns {JSX.Element} Slider section with heading and navigation buttons.
- *
- * @note
- * `images` and `labels` arrays are index-coupled. Keep both arrays aligned
- * when adding/removing items to avoid incorrect alt text mapping.
- */
-function AnimalSlider() {
-  const swiperRef = useRef(null)
+import catsImg from "../homeAssets/cat.jpg";
+import cattleImg from "../homeAssets/cattle.jpeg";
+import dogsImg from "../homeAssets/dog.jpeg";
+import goatsSheepImg from "../homeAssets/goats_sheep.jpeg";
+import horsesImg from "../homeAssets/horses.jpeg";
+import poultryImg from "../homeAssets/poultry.jpeg";
 
-  const images = [
-    cattle,
-    goatsSheep,
-    dogs,
-    cats,
-    poultry,
-    horsesDonkeys,
-  ]
+const animals = [
+  { name: "Cattle", image: cattleImg },
+  { name: "Goats & Sheep", image: goatsSheepImg },
+  { name: "Dogs", image: dogsImg },
+  { name: "Cats", image: catsImg },
+  { name: "Poultry", image: poultryImg },
+  { name: "Horses & Donkeys", image: horsesImg },
+];
 
-  const labels = [
-    "Cattle",
-    "Goats & Sheep",
-    "Dogs",
-    "Cats",
-    "Poultry",
-    "Horses & Donkeys",
-  ]
+const AnimalCarousel = () => {
+  const scrollRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const scrollToIndex = (index) => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const child = el.children[index];
+    if (!child) return;
+    const childRect = child.getBoundingClientRect();
+    const containerRect = el.getBoundingClientRect();
+    el.scrollTo({
+      left: el.scrollLeft + childRect.left - containerRect.left,
+      behavior: "smooth",
+    });
+  };
+
+  const handleNext = () => {
+    const next = (activeIndex + 1) % animals.length;
+    setActiveIndex(next);
+    scrollToIndex(next);
+  };
+
+  const handlePrev = () => {
+    if (activeIndex === 0) return;
+    const prev = activeIndex - 1;
+    setActiveIndex(prev);
+    scrollToIndex(prev);
+  };
 
   return (
-    <div className='bg-bg-main'>
-      <section className="max-w-6xl mx-auto px-4 py-16 ">
-        <div className="space-y-12">
+    <section className="py-16 lg:py-24">
+      <div className="px-4 sm:px-6 lg:px-20">
+        <h2 className="text-3xl lg:text-4xl font-heading font-bold mb-2">
+          We Care For All Your Animals
+        </h2>
+        <p className="text-muted-foreground mb-8">
+          From farm livestock to household pets, we handle a wide range of
+          animals.
+        </p>
+      </div>
 
-          {/* Text Content */}
-          <div>
-            <h2 className="text-4xl font-bold text-slate-900 mb-6">
-              We Care For All Your Animals
-            </h2>
-            <p className="text-lg text-slate-600 leading-relaxed">
-              From farm livestock to household pets, we handle a wide range of animals.
-            </p>
+      <div
+        ref={scrollRef}
+        className="flex gap-4 overflow-x-auto px-4 sm:px-6 lg:px-20 pb-6 snap-x snap-mandatory scrollbar-hide"
+        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+      >
+        {animals.map((animal, i) => (
+          <div
+            key={animal.name}
+            className={`relative flex-shrink-0 w-64 sm:w-72 lg:w-[calc(33.333%-12px)] xl:w-[calc(25%-12px)] h-96 lg:h-[480px] rounded-xl overflow-hidden snap-center transition-opacity duration-500 ${
+              activeIndex === i ? "opacity-100" : "opacity-75"
+            }`}
+          >
+            <img
+              src={animal.image}
+              alt={animal.name}
+              loading="lazy"
+              className={`w-full h-full object-cover transition-transform duration-500 ${
+                activeIndex === i ? "scale-110" : "scale-100"
+              }`}
+            />
+            <div className="absolute bottom-4 left-0 w-full right-0 px-4">
+              <div className="p-4 bg-background/60 backdrop-blur-sm rounded-lg w-full border border-white/20">
+                <span className="text-lg text-white font-semibold">
+                  {animal.name}
+                </span>
+              </div>
+            </div>
           </div>
+        ))}
+      </div>
 
-          {/* Image Slider */}
-          <div className="relative">
-            <Swiper
-              ref={swiperRef}
-              modules={[Navigation, Autoplay]}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              loop={true}
-              spaceBetween={16}
-              slidesPerView={1}
-              breakpoints={{
-                640: { slidesPerView: 2, spaceBetween: 16 },
-                1024: { slidesPerView: 3, spaceBetween: 20 },
-              }}
-              className="rounded-2xl overflow-hidden shadow-lg"
-            >
-              {images.map((image, idx) => (
-                <SwiperSlide key={idx}>
-                  <div className="relative overflow-hidden rounded-2xl  h-80 md:h-80">
-                    <img
-                      src={image}
-                      alt={labels[idx]}
-                      className="w-full h-full object-cover"
-                    />
-                    {/* <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/70 text-white text-sm sm:text-base px-3 py-2 rounded-lg">
-                      {labels[idx]}
-                    </div> */}
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+      <div className="px-4 sm:px-6 lg:px-20 flex gap-3 mt-4">
+        <button
+          onClick={handlePrev}
+          className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <ChevronLeft size={18} />
+        </button>
+        <button
+          onClick={handleNext}
+          className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <ChevronRight size={18} />
+        </button>
+      </div>
+    </section>
+  );
+};
 
-            {/* Navigation Buttons */}
-            <button
-              // Optional chaining prevents runtime errors before Swiper is ready.
-              onClick={() => swiperRef.current?.swiper.slidePrev()}
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg transition-all"
-            >
-              ‹
-            </button>
-
-            <button
-              // Optional chaining prevents runtime errors before Swiper is ready.
-              onClick={() => swiperRef.current?.swiper.slideNext()}
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg transition-all"
-            >
-              ›
-            </button>
-          </div>
-
-        </div>
-      </section>
-    </div>
-  )
-}
-
-
-export default AnimalSlider
+export default AnimalCarousel;

@@ -1,9 +1,9 @@
-import Navbar from '../components/navbar'
-import Hero from '../components/hero'
-import OurServices from '../components/ourServices'
-import ValueProp from '../components/animalSlider'
-import Cta from '../components/cta'
-import Footer from '../components/footer'
+import AnimalCarousel from "../components/animalSlider";
+import Cta from "../components/cta";
+import Footer from "../components/footer";
+import Hero from "../components/hero";
+import Navbar from "../components/navbar";
+import OurServices from "../components/ourServices";
 
 /**
  * Home page composition component.
@@ -16,14 +16,14 @@ import Footer from '../components/footer'
 function Home() {
   return (
     <div>
-      <Navbar/>
-      <Hero/>
-      <OurServices/>
-      <ValueProp/>
-      <Cta/>
-      <Footer/>
+      <Navbar />
+      <Hero />
+      <OurServices />
+      <AnimalCarousel />
+      <Cta />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
