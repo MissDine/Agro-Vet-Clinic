@@ -29,7 +29,7 @@ function footer() {
   >
 
     <span className="bg-gradient-to-r from-yellow-400 to-amber-600 bg-clip-text text-transparent ml-1">
-      Mona
+      Monna
     </span>
   </a>
           <p>Professional Mobile Veterinary Services</p>
