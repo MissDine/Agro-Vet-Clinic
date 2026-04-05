@@ -37,8 +37,8 @@ function Cta() {
     <div >
 
 <section className="py-16 bg-bg-main">
-  <div className="container mx-auto max-w-6xl px-4 py-16 bg-white rounded-2xl ">
-    <div className="bg-white rounded-2xl p-8 md:p-12 flex flex-col items-center text-center">
+  <div className="container mx-auto max-w-6xl px-4 py-16 rounded-2xl ">
+    <div className="bg-light-yellow rounded-2xl p-8 md:p-12 flex flex-col items-center text-center">
       <h2 className="text-3xl font-bold mb-4">Need Immediate Veterinary Assistance?</h2>
       <p className="text-md max-w-2xl mx-auto mb-6">
 Our team is available 24/7 for emergencies. Don't hesitate to reach out for urgent <br /> care.      </p>
