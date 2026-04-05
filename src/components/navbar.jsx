@@ -45,9 +45,9 @@ function Navbar() {
           </a>
         </div>
 
-        <label htmlFor="menu-toggle" className="pointer-cursor md:hidden block">
+        <label htmlFor="menu-toggle" className="cursor-pointer md:hidden block">
           <svg
-            className="fill-current text-gray-900"
+            className="fill-current text-white"
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="20"
@@ -57,14 +57,14 @@ function Navbar() {
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
           </svg>
         </label>
-        <input className="hidden" type="checkbox" id="menu-toggle" />
+        <input className="hidden peer" type="checkbox" id="menu-toggle" />
 
         <div
-          className="hidden md:flex md:items-center md:w-auto w-full"
+          className="hidden peer-checked:block md:flex md:items-center md:w-auto w-full"
           id="menu"
         >
           <nav>
-            <ul className="md:flex items-center justify-between text-base text-white font-semibold pt-4 md:pt-0">
+            <ul className="md:flex items-center text-white font-semibold pt-4 md:pt-0 space-y-3 md:space-y-0 md:space-x-6">
               <li>
                 <Link className={getLinkClass("/")} to="/">
                   Home
