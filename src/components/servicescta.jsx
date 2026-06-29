@@ -35,9 +35,9 @@ function servicescta() {
         <p className="text-lg text-gray-600 mb-8 max-w-lg">
 Animal emergencies don't follow a schedule. That's why our emergency veterinary services are available 24 hours a day, 7 days a week. Call us immediately if your animal needs urgent care.        </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <a href="tel:+254700000000"
+          <a href="tel:+254706877722"
             className="px-8 py-3.5 rounded-lg btn-gradient text-text-black font-semibold bg-gold-main hover:shadow-xl transition-all duration-300">
-           Call our emergency hotline: +254 700 000000
+           Call our emergency hotline: 0706877722
           </a>
           
         </div>

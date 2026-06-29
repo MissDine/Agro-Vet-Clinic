@@ -32,7 +32,7 @@ function Cta() {
     checkDevice()
   }, [])
 
-  const phoneNumber = "+254700000000"
+  const phoneNumber = "+254706877722"
   return (
     <div >
 
@@ -47,7 +47,7 @@ Our team is available 24/7 for emergencies. Don't hesitate to reach out for urge
       href={
         isMobile
           ? `tel:${phoneNumber}`
-          : `https://wa.me/${phoneNumber.replace("+", "")}`
+          : `https://wa.me/254706877722`
       }
       target={!isMobile ? "_blank" : "_self"}
       rel="noopener noreferrer"

@@ -25,9 +25,9 @@ function contactUsCta() {
 For urgent veterinary care, please call our emergency hotline.    </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         
-        <a href="tel:+254 700 000000"
+        <a href="tel:+254706877722"
           className="bg-red text-white font-bold py-4 px-8 rounded-xl transition-colors flex items-center justify-center">
-          Call our emergency hotline: +254 700 000000
+          Call our emergency hotline: 0706877722
         </a>
       </div>
     </div>

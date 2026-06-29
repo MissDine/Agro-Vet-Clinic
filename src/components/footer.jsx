@@ -120,10 +120,10 @@ function footer() {
               <div className="not-italic text-gray-400">
                 <p>
                   <a
-                    href="tel:+254700000000"
+                    href="tel:+254706877722"
                     className="hover:text-white transition"
                   >
-                    +254 700 000000
+                    0706877722
                   </a>
                 </p>
                 <p className="mt-2">

@@ -73,7 +73,7 @@ function Hero() {
 
   <div className="absolute -bottom-8 left-3/4 bg-light-green px-4 py-3 rounded-2xl shadow-sm flex items-center gap-3 hover:bg-green-600 transition-all duration-300 cursor-pointer text-sm">
     <a
-      href="https://wa.me/254712345678"
+      href="https://wa.me/254706877722"
       target="_blank"
       rel="noopener noreferrer"
       className="flex items-center gap-3 text-white"

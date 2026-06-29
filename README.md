@@ -137,7 +137,7 @@ The `ContactUs` page includes:
 - Contact hero (`ContactUsHero`)
 - Message form (`ContactUsForm`) (fields: Full name, Phone number, Email address, Animal type (Cattle, Goats & Sheep, Dogs, Cats, Poultry, Horses & Donkeys), Message)
 - Service area and operating hours (`ContactUsLocation`) (Based in Kisii; covers Kisii, Nyamira, and the entire Nyanza region; Operating hours: Monday-Friday 8:00 AM - 6:00 PM, Saturday 9:00 AM - 4:00 PM, Sunday closed with emergency services available; Mobile emergency service: 24/7)
-- Emergency CTA (`ContactUsCta`) (call our emergency hotline: `+254 700 000000`)
+- Emergency CTA (`ContactUsCta`) (call our emergency hotline: `0706877722`)
 - Footer (`Footer`)
 
 ## Configuration Options
@@ -187,7 +187,7 @@ Page-specific assets are imported from asset folders (for example `src/homeAsset
 Common text/content updates you might want to change:
 
 - **Brand name in the navbar/footer**: `src/components/navbar.jsx`, `src/components/footer.jsx`
-- **Emergency hotline number**: `src/components/contactUsCta.jsx` (currently `+254 700 000000`)
+- **Emergency hotline number**: `src/components/contactUsCta.jsx` (currently `0706877722`)
 - **Service area + operating hours text**: `src/components/contactUsLocation.jsx`
 - **Map location**: `src/components/contactUsLocation.jsx` (Google Maps iframe query uses coordinates)
 - **Animals shown in the slider**: `src/components/animalSlider.jsx`
