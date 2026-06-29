@@ -28,7 +28,7 @@ function Hero() {
       <div className="text-center md:text-left">
         <div className=''>
             <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider text-primary uppercase rounded-full bg-primary/10 mb-4 flex items-center gap-2">
-                <img src="https://api.iconify.design/mdi/map-marker.svg?" alt="location" className="w-4 h-4" />
+                <img src="https://api.iconify.design/mdi/map-marker.svg?" alt="" aria-hidden="true" className="w-4 h-4" loading="lazy" decoding="async" />
                 Serving Kisii, Nyamira and Nyanza regions
             </span>
         </div>
@@ -66,7 +66,11 @@ function Hero() {
       <img
         className="w-full h-full object-cover rounded-xl"
         src={HeroImage}
-        alt="Digital Marketing"
+        alt="Mobile veterinarian caring for cattle in Kisii and Nyanza region"
+        fetchPriority="high"
+        decoding="async"
+        width="480"
+        height="480"
       />
     </div>
   </div>

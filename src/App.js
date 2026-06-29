@@ -1,9 +1,10 @@
 import "../src/index.css"
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from "../src/pages/Home"
-import Services from "../src/pages/services"
-import ContactUs from "../src/pages/ContactUs"
+import React, { Suspense } from "react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
+const Home = React.lazy(() => import("../src/pages/Home"))
+const Services = React.lazy(() => import("../src/pages/services"))
+const ContactUs = React.lazy(() => import("../src/pages/ContactUs"))
 
 /**
  * Root application component.
@@ -22,14 +23,16 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<ContactUs/>} />
-        </Routes>
+        <Suspense fallback={<div className="min-h-screen bg-bg-main" />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<ContactUs />} />
+          </Routes>
+        </Suspense>
       </div>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

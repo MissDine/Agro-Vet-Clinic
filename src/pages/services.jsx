@@ -5,6 +5,8 @@ import ServicesList from '../components/servicesList'
 import Servicescta from '../components/servicescta'
 import ServicesCta2 from '../components/servicesCta2'
 import Footer from '../components/footer'
+import Seo from '../components/Seo'
+import { SITE_URL } from '../config/site'
 
 /**
  * Services page composition component.
@@ -17,14 +19,30 @@ import Footer from '../components/footer'
  */
 function Services() {
   return (
-    <div>
+    <>
+      <Seo
+        title="Our Services"
+        description="Comprehensive mobile veterinary services in Kisii, Nyamira, and Nyanza: preventive care, diagnostics, surgery, emergency care, livestock and pet treatment at your location."
+        path="/services"
+        keywords="vet services Kisii, animal surgery Nyamira, pet vaccinations Nyanza, livestock treatment Kenya, emergency vet services"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'Our Services | The Monna Veterinary Clinic',
+          description:
+            'Comprehensive mobile veterinary services across Kisii, Nyamira, and Nyanza.',
+          url: `${SITE_URL}/services`,
+        }}
+      />
       <Navbar />
+      <main>
         <ServicesHero />
-     <ServicesList/>
-     <Servicescta/>
-     <ServicesCta2/>
+        <ServicesList />
+        <Servicescta />
+        <ServicesCta2 />
+      </main>
       <Footer />
-    </div>
+    </>
   )
 }
 

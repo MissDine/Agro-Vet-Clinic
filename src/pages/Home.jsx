@@ -4,6 +4,11 @@ import OurServices from '../components/ourServices'
 import ValueProp from '../components/animalSlider'
 import Cta from '../components/cta'
 import Footer from '../components/footer'
+import Seo from '../components/Seo'
+import {
+  DEFAULT_DESCRIPTION,
+  LOCAL_BUSINESS_JSON_LD,
+} from '../config/site'
 
 /**
  * Home page composition component.
@@ -15,14 +20,21 @@ import Footer from '../components/footer'
  */
 function Home() {
   return (
-    <div>
-      <Navbar/>
-      <Hero/>
-      <OurServices/>
-      <ValueProp/>
-      <Cta/>
-      <Footer/>
-    </div>
+    <>
+      <Seo
+        description={DEFAULT_DESCRIPTION}
+        path="/"
+        jsonLd={LOCAL_BUSINESS_JSON_LD}
+      />
+      <Navbar />
+      <main>
+        <Hero />
+        <OurServices />
+        <ValueProp />
+        <Cta />
+      </main>
+      <Footer />
+    </>
   )
 }
 

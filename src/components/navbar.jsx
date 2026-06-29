@@ -35,13 +35,13 @@ function Navbar() {
     <div className="bg-bg-black-main border-b-2 border-border sticky top-0 z-50">
       <header className="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-md">
         <div className="flex-1 flex justify-between items-center">
-          <a
-            href="/#"
+          <Link
+            to="/"
             className="text-3xl font-bold tracking-wide text-white transition-all duration-300 hover:scale-105"
           >
             <span className="bg-gradient-to-r from-yellow-400 to-amber-600 bg-clip-text text-transparent ml-1">
             The  Monna Veterinary Clinic            </span>
-          </a>
+          </Link>
         </div>
 
         <label htmlFor="menu-toggle" className="cursor-pointer md:hidden block">

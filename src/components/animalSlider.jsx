@@ -82,8 +82,10 @@ function AnimalSlider() {
                   <div className="relative overflow-hidden rounded-2xl  ">
                     <img
                       src={image}
-                      alt={labels[idx]}
+                      alt={`${labels[idx]} veterinary care by The Monna Veterinary Clinic`}
                       className="w-full h-full object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/70 text-white text-sm sm:text-base px-3 py-2 rounded-lg">
                       {labels[idx]}

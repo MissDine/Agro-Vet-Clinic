@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Monna Vet",
+  "name": "The Monna Veterinary Clinic",
+  "description": "Mobile veterinary services across Kisii, Nyamira, and Nyanza, Kenya.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#b8860b",
+  "background_color": "#ffffff",
+  "lang": "en-KE"
 }

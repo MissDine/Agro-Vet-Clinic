@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 /**
  * Global footer component.
  *
@@ -20,14 +22,14 @@ function footer() {
             {/* Company Info */}
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <a
-                  href="/#"
+                <Link
+                  to="/"
                   className="text-3xl font-bold tracking-wide text-white transition-all duration-300 hover:scale-105"
                 >
                   <span className="bg-gradient-to-r from-yellow-400 to-amber-600 bg-clip-text text-transparent ml-1">
                     Monna
                   </span>
-                </a>
+                </Link>
                 <p>Professional Mobile Veterinary Services</p>
               </div>
               <p className="text-gray-400">
