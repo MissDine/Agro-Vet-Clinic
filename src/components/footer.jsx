@@ -129,10 +129,10 @@ function footer() {
                 <p className="mt-2">
                   {" "}
                   <a
-                    href="mailto:info@wecarevet.co.ke"
+                    href="mailto:kevin068mbunde@gmail.com"
                     className="hover:text-white transition"
                   >
-                    info@wecarevet.co.ke
+                    kevin068mbunde@gmail.com
                   </a>
                 </p>
                 <p>Kisii, Nyamira & Nyanza Regions</p>
