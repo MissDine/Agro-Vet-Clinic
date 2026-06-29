@@ -1,7 +1,7 @@
 export const SITE_TAGLINE = "Mobile Veterinary Care in Kisii, Nyamira & Nyanza"
 export const SITE_NAME = "The Monna Veterinary Clinic"
 export const SITE_URL =
-  process.env.REACT_APP_SITE_URL || "https://monnavetclinic.co.ke"
+  process.env.REACT_APP_SITE_URL || "https://themonnaveterinary.com"
 
 export const SITE_PHONE = "+254706877722"
 export const SITE_PHONE_DISPLAY = "0706877722"
