@@ -28,7 +28,7 @@ function Hero() {
       <div className="text-center md:text-left">
         <div className=''>
             <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider text-primary uppercase rounded-full bg-primary/10 mb-4 flex items-center gap-2">
-                <img src="https://api.iconify.design/mdi/map-marker.svg?" alt="" aria-hidden="true" className="w-4 h-4" loading="lazy" decoding="async" />
+                <img src="https://api.iconify.design/mdi/map-marker.svg?" alt="Map marker for Kisii, Nyamira, and Nyanza service area" className="w-4 h-4" loading="lazy" decoding="async" />
                 Serving Kisii, Nyamira and Nyanza regions
             </span>
         </div>

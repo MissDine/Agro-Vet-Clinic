@@ -1,4 +1,4 @@
-export const SITE_TAGLINE = "Mobile Veterinary Care in Kisii, Nyamira & Nyanza"
+export const SITE_TAGLINE = "Mobile Vet Kisii & Nyanza"
 export const SITE_NAME = "The Monna Veterinary Clinic"
 export const SITE_URL =
   process.env.REACT_APP_SITE_URL || "https://themonnaveterinary.com"
@@ -8,7 +8,7 @@ export const SITE_PHONE_DISPLAY = "0706877722"
 export const SITE_EMAIL = "kevin068mbunde@gmail.com"
 
 export const DEFAULT_DESCRIPTION =
-  "Professional 24/7 mobile veterinary services for livestock, pets, and poultry across Kisii, Nyamira, and Nyanza, Kenya. Emergency care, vaccinations, surgery, and diagnostics at your farm or home."
+  "Mobile vet for livestock, pets, and poultry in Kisii, Nyamira, and Nyanza. 24/7 emergency care, vaccinations, surgery, and farm visits."
 
 export const DEFAULT_KEYWORDS =
   "mobile vet Kisii, veterinary clinic Nyamira, Nyanza vet services, emergency vet Kenya, livestock vet, pet doctor Kisii, animal hospital, Monna Veterinary Clinic"
