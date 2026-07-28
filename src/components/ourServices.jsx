@@ -28,7 +28,7 @@ function ourServices() {
                 <h2 className="mb-4 text-4xl font-bold text-text-black sm:text-5xl dark:text-white">
                     Our Core Services
                 </h2>
-                <p className="mx-auto text-xl text-text-black dark:text-gray-300">Comprehensive veterinary care tailored to your animal’s needs </p>
+                <p className="mx-auto text-xl text-text-black dark:text-white">Comprehensive veterinary care tailored to your animal’s needs </p>
             </div>
         </div>
         <div className="grid gap-8 mb-20 md:grid-cols-2 lg:grid-cols-3">
@@ -39,10 +39,10 @@ function ourServices() {
                       
                     </div>
                 </div>
-                <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+                <h3 className="mb-4 text-2xl font-bold text-text-black dark:text-white">
                     Preventive & Wellness
                 </h3>
-                <p className="mb-6 text-gray-600 dark:text-gray-300">Routine health checks, vaccinations, and de-worming to keep your animals healthy</p>
+                <p className="mb-6 text-text-black dark:text-white">Routine health checks, vaccinations, and de-worming to keep your animals healthy</p>
                
             </div>
             <div className={`group transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-main border border-border-gray`}>
@@ -52,10 +52,10 @@ function ourServices() {
                       
                     </div>
                 </div>
-                <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+                <h3 className="mb-4 text-2xl font-bold text-text-black dark:text-white">
                     Diagnostics
                 </h3>
-                <p className="mb-6 text-gray-600 dark:text-gray-300">In-house lab testing, X-rays, and ultrasound imaging for accurate diagnosis.</p>
+                <p className="mb-6 text-text-black dark:text-white">In-house lab testing, X-rays, and ultrasound imaging for accurate diagnosis.</p>
                
             </div>
             <div className={`group transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-main border border-border-gray`}>
@@ -65,10 +65,10 @@ function ourServices() {
                       
                     </div>
                 </div>
-                <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+                <h3 className="mb-4 text-2xl font-bold text-text-black dark:text-white">
                     Surgery
                 </h3>
-                <p className="mb-6 text-gray-600 dark:text-gray-300">Soft tissue and orthopedic surgery, dental cleaning, and emergency care.</p>
+                <p className="mb-6 text-text-black dark:text-white">Soft tissue and orthopedic surgery, dental cleaning, and emergency care.</p>
                
             </div>
         </div>
