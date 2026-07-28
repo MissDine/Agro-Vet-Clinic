@@ -29,7 +29,7 @@ function servicesList() {
         <div className="w-full flex flex-col items-center md:py-4 py-10">
           <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-6 gap-4 justify-center items-stretch mt-4">
             {/* Text Column */}
-            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-gray-50 dark:bg-gray-800">
+            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-text-black dark:bg-white">
               <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white">
                 <img
                   className="w-8 h-8 text-text-black"
@@ -40,16 +40,16 @@ function servicesList() {
                   alt=""
                 />
               </div>
-              <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+              <h3 className="mb-4 text-2xl font-bold text-text-black dark:text-white">
                 Preventive & Wellness
               </h3>
-              <p className="mb-6 text-text-black">
+              <p className="mb-6 text-text-black dark:text-white">
                 Keep your animals healthy with regular preventive care
               </p>
-              <ul className="space-y-2 text-sm text-text-black">
+              <ul className="space-y-2 text-sm text-text-black dark:text-white">
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-text-black dark:text-white mr-2"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -65,7 +65,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-text-black dark:text-white mr-2"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -81,7 +81,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-text-black dark:text-white mr-2"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -97,7 +97,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-text-black dark:text-white mr-2"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -113,7 +113,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-text-black dark:text-white mr-2"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -152,7 +152,7 @@ function servicesList() {
             </div>
 
             {/* Text Column */}
-            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-gray-50 dark:bg-gray-800">
+            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-text-black dark:bg-white">
               <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white">
                 <img
                   className="w-8 h-8 text-text-black"
@@ -163,16 +163,16 @@ function servicesList() {
                   alt=""
                 />
               </div>
-              <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+              <h3 className="mb-4 text-2xl font-bold text-text-black dark:text-white">
                 Diagnostics
               </h3>
               <p className="mb-6 text-text-black">
                 Advanced diagnostic services for accurate health assessment
               </p>
-              <ul className="space-y-2 text-sm text-text-black">
+              <ul className="space-y-2 text-sm text-text-black dark:text-white">
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-text-black dark:text-white mr-2"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -188,7 +188,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-text-black dark:text-white mr-2"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -220,7 +220,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-text-black dark:text-white mr-2"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -236,7 +236,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-text-black dark:text-white mr-2"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
