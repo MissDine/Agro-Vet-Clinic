@@ -25,31 +25,29 @@ import pic3 from "./servicesAssets/Screen mockup 3_2 (3).png";
 function servicesList() {
   return (
     <div>
-      <section className="w-full mx-auto py-10 bg-bg-main ">
+      <section className="w-full mx-auto py-10 bg-bg-main">
+        {/* Preventive & Wellness */}
         <div className="w-full flex flex-col items-center md:py-4 py-10">
           <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-6 gap-4 justify-center items-stretch mt-4">
             {/* Text Column */}
-            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-text-black dark:bg-white">
-              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white">
+            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-bg-black-main border border-gray-800 shadow-xl">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white/10 border border-gold-main/20">
                 <img
-                  className="w-8 h-8 text-text-black"
-                  fill="#0F0E0C"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                  className="w-8 h-8"
                   src={heartIcon}
-                  alt=""
+                  alt="Heart Icon"
                 />
               </div>
-              <h3 className="mb-4 text-2xl font-bold text-text-black dark:text-white">
+              <h3 className="mb-4 text-2xl font-bold text-white">
                 Preventive & Wellness
               </h3>
-              <p className="mb-6 text-text-black dark:text-white">
+              <p className="mb-6 text-white/90 font-medium">
                 Keep your animals healthy with regular preventive care
               </p>
-              <ul className="space-y-2 text-sm text-text-black dark:text-white">
+              <ul className="space-y-3 text-sm text-white font-medium">
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black dark:text-white mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -65,7 +63,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black dark:text-white mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -81,7 +79,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black dark:text-white mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -97,7 +95,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black dark:text-white mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -113,7 +111,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black dark:text-white mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -140,6 +138,8 @@ function servicesList() {
             </div>
           </div>
         </div>
+
+        {/* Diagnostics */}
         <div className="w-full flex flex-col items-center md:py-4 py-10">
           <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-6 gap-4 justify-center items-stretch mt-4">
             {/* Image Column */}
@@ -152,27 +152,24 @@ function servicesList() {
             </div>
 
             {/* Text Column */}
-            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-text-black dark:bg-white">
-              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white">
+            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-bg-black-main border border-gray-800 shadow-xl">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white/10 border border-gold-main/20">
                 <img
-                  className="w-8 h-8 text-text-black"
-                  fill="#0F0E0C"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                  className="w-8 h-8"
                   src={diagnosticsIcon}
-                  alt=""
+                  alt="Diagnostics Icon"
                 />
               </div>
-              <h3 className="mb-4 text-2xl font-bold text-text-black dark:text-white">
+              <h3 className="mb-4 text-2xl font-bold text-white">
                 Diagnostics
               </h3>
-              <p className="mb-6 text-text-black">
+              <p className="mb-6 text-white/90 font-medium">
                 Advanced diagnostic services for accurate health assessment
               </p>
-              <ul className="space-y-2 text-sm text-text-black dark:text-white">
+              <ul className="space-y-3 text-sm text-white font-medium">
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black dark:text-white mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -188,7 +185,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black dark:text-white mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -204,7 +201,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -220,7 +217,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black dark:text-white mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -236,7 +233,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black dark:text-white mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -254,30 +251,29 @@ function servicesList() {
             </div>
           </div>
         </div>
+
+        {/* Surgery */}
         <div className="w-full flex flex-col items-center md:py-4 py-10">
           <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-6 gap-4 justify-center items-stretch mt-4">
             {/* Text Column */}
-            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-gray-50 dark:bg-gray-800">
-              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white">
+            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-bg-black-main border border-gray-800 shadow-xl">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white/10 border border-gold-main/20">
                 <img
-                  className="w-8 h-8 text-text-black"
-                  fill="#0F0E0C"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                  className="w-8 h-8"
                   src={surgeryIcon}
-                  alt=""
+                  alt="Surgery Icon"
                 />
               </div>
-              <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+              <h3 className="mb-4 text-2xl font-bold text-white">
                 Surgery
               </h3>
-              <p className="mb-6 text-text-black">
+              <p className="mb-6 text-white/90 font-medium">
                 Professional surgical procedures with expert care
               </p>
-              <ul className="space-y-2 text-sm text-text-black">
+              <ul className="space-y-3 text-sm text-white font-medium">
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -293,7 +289,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -309,7 +305,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -325,7 +321,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -341,7 +337,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -368,6 +364,8 @@ function servicesList() {
             </div>
           </div>
         </div>
+
+        {/* Treatment & Disease Management */}
         <div className="w-full flex flex-col items-center md:py-4 py-10">
           <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-6 gap-4 justify-center items-stretch mt-4">
             {/* Image Column */}
@@ -380,27 +378,24 @@ function servicesList() {
             </div>
 
             {/* Text Column */}
-            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-gray-50 dark:bg-gray-800">
-              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white">
+            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-bg-black-main border border-gray-800 shadow-xl">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white/10 border border-gold-main/20">
                 <img
-                  className="w-8 h-8 text-text-black"
-                  fill="#0F0E0C"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                  className="w-8 h-8"
                   src={diagnosticsIcon}
-                  alt=""
+                  alt="Diagnostics Icon"
                 />
               </div>
-              <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+              <h3 className="mb-4 text-2xl font-bold text-white">
                 Treatment & Disease Management
               </h3>
-              <p className="mb-6 text-text-black">
+              <p className="mb-6 text-white/90 font-medium">
                 Comprehensive treatment for various conditions
               </p>
-              <ul className="space-y-2 text-sm text-text-black">
+              <ul className="space-y-3 text-sm text-white font-medium">
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -416,7 +411,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -432,7 +427,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -448,7 +443,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -464,7 +459,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -482,30 +477,29 @@ function servicesList() {
             </div>
           </div>
         </div>
+
+        {/* Pet Care Services */}
         <div className="w-full flex flex-col items-center md:py-4 py-10">
           <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-6 gap-4 justify-center items-stretch mt-4">
             {/* Text Column */}
-            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-gray-50 dark:bg-gray-800">
-              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white">
+            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-bg-black-main border border-gray-800 shadow-xl">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white/10 border border-gold-main/20">
                 <img
-                  className="w-8 h-8 text-text-black"
-                  fill="#0F0E0C"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                  className="w-8 h-8"
                   src={surgeryIcon}
-                  alt=""
+                  alt="Surgery Icon"
                 />
               </div>
-              <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+              <h3 className="mb-4 text-2xl font-bold text-white">
                 Pet Care Services
               </h3>
-              <p className="mb-6 text-text-black">
+              <p className="mb-6 text-white/90 font-medium">
                 Specialized care for your beloved pets
               </p>
-              <ul className="space-y-2 text-sm text-text-black">
+              <ul className="space-y-3 text-sm text-white font-medium">
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -521,7 +515,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -537,7 +531,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -553,7 +547,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -569,7 +563,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -596,6 +590,8 @@ function servicesList() {
             </div>
           </div>
         </div>
+
+        {/* Veterinary Consultation */}
         <div className="w-full flex flex-col items-center md:py-4 py-10">
           <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-6 gap-4 justify-center items-stretch mt-4">
             {/* Image Column */}
@@ -608,25 +604,22 @@ function servicesList() {
             </div>
 
             {/* Text Column */}
-            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-gray-50 dark:bg-gray-800">
-              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white">
+            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-bg-black-main border border-gray-800 shadow-xl">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white/10 border border-gold-main/20">
                 <img
-                  className="w-8 h-8 text-text-black"
-                  fill="#0F0E0C"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                  className="w-8 h-8"
                   src={diagnosticsIcon}
-                  alt=""
+                  alt="Diagnostics Icon"
                 />
               </div>
-              <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+              <h3 className="mb-4 text-2xl font-bold text-white">
                 Veterinary Consultation
               </h3>
-              <p className="mb-6 text-text-black"> Veterinary Consultation </p>
-              <ul className="space-y-2 text-sm text-text-black">
+              <p className="mb-6 text-white/90 font-medium"> Standard & On-site Consultations </p>
+              <ul className="space-y-3 text-sm text-white font-medium">
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -642,7 +635,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -658,7 +651,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -674,7 +667,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -690,7 +683,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -708,30 +701,29 @@ function servicesList() {
             </div>
           </div>
         </div>
+
+        {/* Obstetrics & Gynecology */}
         <div className="w-full flex flex-col items-center md:py-4 py-10">
           <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-6 gap-4 justify-center items-stretch mt-4">
             {/* Text Column */}
-            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-gray-50 dark:bg-gray-800">
-              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white">
+            <div className="md:w-1/2 w-full transition-all duration-1000 ease-out delay-200 p-8 rounded-2xl bg-bg-black-main border border-gray-800 shadow-xl">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white/10 border border-gold-main/20">
                 <img
-                  className="w-8 h-8 text-text-black"
-                  fill="#0F0E0C"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                  className="w-8 h-8"
                   src={surgeryIcon}
-                  alt=""
+                  alt="Surgery Icon"
                 />
               </div>
-              <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+              <h3 className="mb-4 text-2xl font-bold text-white">
                 Obstetrics & Gynecology
               </h3>
-              <p className="mb-6 text-text-black">
+              <p className="mb-6 text-white/90 font-medium">
                 Reproductive health services for your animals
               </p>
-              <ul className="space-y-2 text-sm text-text-black">
+              <ul className="space-y-3 text-sm text-white font-medium">
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -747,7 +739,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -763,7 +755,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -779,7 +771,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -795,7 +787,7 @@ function servicesList() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-text-black mr-2"
+                    className="w-6 h-6 text-gold-main mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
